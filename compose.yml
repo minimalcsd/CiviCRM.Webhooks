@@ -23,6 +23,8 @@ services:
       CIVICRM_UF_BASEURL: http://localhost:8760
     depends_on:
       - db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   db:
     hostname: db
     image: mariadb:10.11
