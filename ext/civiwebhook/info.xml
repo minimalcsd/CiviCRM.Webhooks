@@ -2,19 +2,17 @@
 <extension key="civiwebhook" type="module">
   <file>civiwebhook</file>
   <name>civiwebhook</name>
-  <description>FIXME</description>
+  <description>Adds webhooks to notify a 3rd party of updates to contacts</description>
   <license>AGPL-3.0</license>
   <authors>
     <author>
-      <name>FIXME</name>
-      <email>FIXME</email>
+      <name>circle.cloud</name>
+      <email>support@circle.cloud</email>
       <role>Maintainer</role>
     </author>
   </authors>
   <urls>
-    <url desc="Main Extension Page">https://FIXME</url>
-    <url desc="Documentation">https://FIXME</url>
-    <url desc="Support">https://FIXME</url>
+    <url desc="Documentation">https://integrations.circlecloud.tech/civicrm</url>
     <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <menu>
@@ -26,13 +24,13 @@
       <adminGroup>System Settings</adminGroup>
     </item>
   </menu>
-  <releaseDate>2025-05-27</releaseDate>
+  <releaseDate>2025-06-13</releaseDate>
   <version>1.0.0</version>
-  <develStage>alpha</develStage>
+  <develStage>beta</develStage>
   <compatibility>
     <ver>6.2</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments>Module for sending webhooks</comments>
   <classloader>
     <psr0 prefix="CRM_" path="."/>
     <psr4 prefix="Civi\" path="Civi"/>
