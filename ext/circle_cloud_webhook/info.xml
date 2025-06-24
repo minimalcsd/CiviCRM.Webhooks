@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<extension key="civiwebhook" type="module">
-  <file>civiwebhook</file>
-  <name>civiwebhook</name>
+<extension key="circle_cloud_webhook" type="module">
+  <file>circle_cloud_webhook</file>
+  <name>Circle Cloud Webhook</name>
   <description>Adds webhooks to notify a 3rd party of updates to contacts</description>
   <license>AGPL-3.0</license>
   <authors>
@@ -10,25 +10,20 @@
       <email>support@circle.cloud</email>
       <role>Maintainer</role>
     </author>
+    <author>
+      <name>Circle Interactive</name>
+      <email>support@circle-interactive.co.uk</email>
+    </author>
   </authors>
   <urls>
     <url desc="Documentation">https://integrations.circlecloud.tech/civicrm</url>
     <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
-  <menu>
-    <item>
-      <path>civicrm/admin/setting/civiwebhook</path>
-      <label>CiviWebhook Settings</label>
-      <name>civiwebhook_settings</name>
-      <permission>administer CiviCRM</permission>
-      <adminGroup>System Settings</adminGroup>
-    </item>
-  </menu>
-  <releaseDate>2025-06-13</releaseDate>
+  <releaseDate>2025-06-24</releaseDate>
   <version>1.0.0</version>
-  <develStage>beta</develStage>
+  <develStage>stable</develStage>
   <compatibility>
-    <ver>6.2</ver>
+    <ver>5.78</ver>
   </compatibility>
   <comments>Module for sending webhooks</comments>
   <classloader>
@@ -36,9 +31,9 @@
     <psr4 prefix="Civi\" path="Civi"/>
   </classloader>
   <civix>
-    <namespace>CRM/Civiwebhook</namespace>
+    <namespace>CRM/CircleCloudWebhook</namespace>
     <format>25.01.1</format>
-    <angularModule>crmCiviwebhook</angularModule>
+    <angularModule>crmCircleCloudWebhook</angularModule>
   </civix>
   <mixins>
     <mixin>mgd-php@1.0.0</mixin>
